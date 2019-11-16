@@ -1,6 +1,6 @@
 # editline-tabcomp
 
-Tab-completion implementation for BSD editline (libedit).
+Tab completion implementation for BSD editline (libedit).
 
 ## Motivation
 
