@@ -32,7 +32,7 @@ A usage example is also provided in `example.c`, compile it using:
 
 	$ make
 
-The example complete any input starting with a `f` character.
+The example completes any input starting with a `f` character.
 
 ## License
 
