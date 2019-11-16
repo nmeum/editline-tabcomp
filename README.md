@@ -11,6 +11,10 @@ this repository. However, nowadays input uses the readline compatibility
 layer and I just wanted to archive this code somewhere in case it is
 useful for someone else.
 
+## Status
+
+I don't use this myself anymore but I am not aware of any bugs.
+
 ## Features
 
 * Simple API.
