@@ -17,10 +17,20 @@
 #ifndef EDITLINE_TABCOMP
 #define EDITLINE_TABCOMP
 
+/* Completion functions, receives the input prefix and its length. */
 typedef void (*compfn)(const char *, size_t);
 
+/* Can be called from the completion function, adds a completion to the
+ * list of suggested completions, performs memory allocations */
 void addcomp(char *);
+
+/* Initializes the completion API with the given completion function.
+ * The second argument indicates what kind of completions should be
+ * performed. If zero lines are completed, otherwise individual words. */
 void initcomp(compfn, int);
+
+/* Editline completion function which needs to be added using EL_ADDFN
+ * and bound to the completion key (e.g. tab) using EL_BIND. */
 unsigned char complete(EditLine *, int);
 
 #endif
