@@ -20,6 +20,7 @@ I don't use this myself anymore but I am not aware of any bugs.
 * Simple API.
 * Supports wide characters.
 * Supports cycling through multiple completions.
+* Easy to integrate (single source file in C99).
 
 ## Usage
 
