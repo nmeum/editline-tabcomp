@@ -19,13 +19,13 @@ useful for someone else.
 
 ## Usage
 
-The implementation is provided as a single header file in this
-repository though it might be desirable to separate declarations and
-implementations.
+The implementation is provided in `complete.c` and `complete.h` these
+files should just be copied to your repository. The header file contains
+some pointers on how to use the provided functions.
 
-A usage example is provided in `example.c`, compile it using:
+A usage example is also provided in `example.c`, compile it using:
 
-	$ cc -o example example.c -ledit -lncurses
+	$ make
 
 ## License
 
