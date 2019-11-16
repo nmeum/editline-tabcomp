@@ -9,9 +9,10 @@
 static void
 compfunc(const char *input, size_t inlen)
 {
-	if (inlen >= 1 && input[0] == 'h') {
-		addcomp("hellö");
-		addcomp("hellö there");
+	if (inlen >= 1 && input[0] == 'f') {
+		addcomp("föö");
+		addcomp("fööbar");
+		addcomp("fööbaz");
 	}
 }
 
