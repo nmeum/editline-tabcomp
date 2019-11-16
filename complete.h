@@ -17,6 +17,8 @@
 #ifndef EDITLINE_TABCOMP
 #define EDITLINE_TABCOMP
 
+#include <histedit.h>
+
 /* Completion functions, receives the input prefix and its length. */
 typedef void (*compfn)(const char *, size_t);
 
