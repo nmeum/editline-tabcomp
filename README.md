@@ -1,6 +1,6 @@
 # editline-tabcomp
 
-Implementation of a tab-completion algorithm for BSD editline.
+Tab-completion implementation for BSD editline (libedit).
 
 ## Motivation
 
