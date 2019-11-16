@@ -6,7 +6,7 @@ Implementation of a tab-completion algorithm for BSD editline.
 
 While the editline readline compatibility layer supports tab
 completions, editline itself does not. When I started using editline in
-[input][input github] I implemented tab completions using the code in
+[input][input github]. I implemented tab completions using the code in
 this repository. However, nowadays input uses the readline compatibility
 layer and I just wanted to archive this code somewhere in case it is
 useful for someone else.
