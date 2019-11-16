@@ -1,6 +1,6 @@
 # editline-tabcomp
 
-This an implementation of a tab-completion algorithm for BSD editline.
+Implementation of a tab-completion algorithm for BSD editline.
 
 ## Motivation
 
@@ -16,6 +16,16 @@ useful for someone else.
 * Simple API.
 * Supports wide characters.
 * Supports cycling through multiple completions.
+
+## Usage
+
+The implementation is provided as a single header file in this
+repository though it might be desirable to separate declarations and
+implementations.
+
+A usage example is provided in `example.c`, compile it using:
+
+	$ cc -o example example.c -ledit -lncurses
 
 ## License
 
