@@ -3,17 +3,26 @@
 #include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "complete.h"
+
+#define ARRAY_SIZE(X) (sizeof(X) / sizeof(X[0]))
+
+static char *completions[] = {
+    "föö",
+    "fööbar",
+    "fööbaz",
+};
 
 static void
 compfunc(const char *input, size_t inlen)
 {
-	if (inlen >= 1 && input[0] == 'f') {
-		addcomp("föö");
-		addcomp("fööbar");
-		addcomp("fööbaz");
-	}
+	size_t i;
+
+	for (i = 0; i < ARRAY_SIZE(completions); i++)
+		if (!strncmp(input, completions[i], inlen))
+			addcomp(completions[i]);
 }
 
 int
