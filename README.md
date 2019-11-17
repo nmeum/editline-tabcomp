@@ -32,8 +32,6 @@ A usage example is also provided in `example.c`, compile it using:
 
 	$ make
 
-The example completes any input starting with an `f` character.
-
 ## License
 
 This program is free software: you can redistribute it and/or modify it
